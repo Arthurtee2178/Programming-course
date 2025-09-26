@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Python — Programming Course</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page topic">
+    <header class="site-header topic-header">
+      <a href="index.html" class="back" aria-label="Go to home" title="Go to home">← Home</a>
+      <h1>Python</h1>
+      <p>20 core concepts with quick examples — click a card to flip it</p>
+    </header>
+
+  <main>
+    <section class="concept-grid" aria-label="python concepts">
+      <!-- We'll add 20 flip cards -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Variable</div>
+            <div class="concept-desc">Store values</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Variable — Python</div>
+            <pre class="code">x = 42
+name = 'Alice'
+pi = 3.14159</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Function</div>
+            <div class="concept-desc">Reusable code block</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Function — Python</div>
+            <pre class="code">def greet(name):
+    return f"Hello, {name}!"
+
+print(greet('A'))</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Loop</div>
+            <div class="concept-desc">Repeat actions</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Loop — Python</div>
+            <pre class="code">for i in range(5):
+    print(i)
+
+while condition:
+    # do work
+    break</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">List</div>
+            <div class="concept-desc">Ordered collection</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">List — Python</div>
+            <pre class="code">fruits = ['apple', 'banana', 'cherry']
+fruits.append('date')
+print(fruits[0])</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Tuple</div>
+            <div class="concept-desc">Immutable sequence</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Tuple — Python</div>
+            <pre class="code">coords = (10, 20)
+# can't reassign coords[0]</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Dictionary</div>
+            <div class="concept-desc">Key-value mapping</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Dict — Python</div>
+            <pre class="code">person = {'name': 'Bob', 'age': 30}
+print(person['name'])
+person['city'] = 'Paris'</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Set</div>
+            <div class="concept-desc">Unordered unique items</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Set — Python</div>
+            <pre class="code">s = {1, 2, 3}
+s.add(4)
+print(2 in s)</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Comprehension</div>
+            <div class="concept-desc">Concise list/set/dict creation</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Comprehension — Python</div>
+            <pre class="code">squares = [x * x for x in range(6)]
+evens = {x for x in range(10) if x % 2 == 0}</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Module</div>
+            <div class="concept-desc">Code grouping & reuse</div>
+          </div>
+def add(a,b):
+          <div class="flip-back flip-card">
+            <div class="concept-title">Module — Python</div>
+            <pre class="code"># save as math_utils.py
+def add(a, b):
+    return a + b
+
+import math_utils
+print(math_utils.add(1, 2))</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Exception</div>
+            <div class="concept-desc">Error handling</div>
+          </div>
+      <div class="flip-back flip-card">
+      <div class="concept-title">Exception — Python</div>
+      <pre class="code">try:
+  1/0
+except ZeroDivisionError:
+  print('cannot divide by zero')
+finally:
+  print('cleanup')</pre>
+      </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">File I/O</div>
+            <div class="concept-desc">Read and write files</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">File I/O — Python</div>
+            <pre class="code">with open('data.txt', 'w') as f:
+    f.write('hello')
+
+with open('data.txt') as f:
+    print(f.read())</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Class</div>
+            <div class="concept-desc">Object-oriented blueprint</div>
+          </div>
+    <div class="flip-back flip-card">
+      <div class="concept-title">Class — Python</div>
+      <pre class="code">class Person:
+    def __init__(self, name):
+  self.name = name
+
+p = Person('Sam')
+print(p.name)</pre>
+    </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Lambda</div>
+            <div class="concept-desc">Inline anonymous function</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Lambda — Python</div>
+            <pre class="code">double = lambda x: x * 2
+print(double(5))
+print(list(map(lambda x: x + 1, [1, 2, 3])))</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Iterator</div>
+            <div class="concept-desc">Traverse items lazily</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Iterator — Python</div>
+            <pre class="code">it = iter([1, 2, 3])
+print(next(it))
+
+for v in it:
+    print(v)</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Generator</div>
+            <div class="concept-desc">Yield values on demand</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Generator — Python</div>
+            <pre class="code">def count(n):
+    for i in range(n):
+        yield i
+
+for x in count(3):
+    print(x)</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Decorator</div>
+            <div class="concept-desc">Modify behavior of functions</div>
+          </div>
+      <div class="flip-back flip-card">
+      <div class="concept-title">Decorator — Python</div>
+      <pre class="code">def memo(f):
+  cache = {}
+  def wrapped(x):
+    if x in cache:
+      return cache[x]
+    cache[x] = f(x)
+    return cache[x]
+  return wrapped</pre>
+      </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Virtual Env</div>
+            <div class="concept-desc">Isolated dependencies</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Venv — Python</div>
+            <pre class="code">python -m venv .venv
+# activate and pip install packages</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Type hints</div>
+            <div class="concept-desc">Optional static typing</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Typing — Python</div>
+            <pre class="code">def add(a: int, b: int) -> int:
+    return a + b
+
+from typing import List</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">HTTP Requests</div>
+            <div class="concept-desc">Fetch data over network</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Requests — Python</div>
+            <pre class="code">import requests
+resp = requests.get('https://api.example')
+print(resp.status_code)</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Concurrency</div>
+            <div class="concept-desc">Async / threading</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Concurrency — Python</div>
+            <pre class="code">import asyncio
+async def main():
+    await asyncio.sleep(0.1)
+
+asyncio.run(main())
+
+# or use threading for CPU-bound</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Packaging</div>
+            <div class="concept-desc">Distribute your code</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Packaging — Python</div>
+            <pre class="code"># use pyproject.toml & build tools
+pip install build
+python -m build</pre>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">© Programming Course</footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

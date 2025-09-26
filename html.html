@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML — Programming Course</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page topic">
+    <header class="site-header topic-header">
+      <a href="index.html" class="back" aria-label="Go to home" title="Go to home">← Home</a>
+      <h1>HTML</h1>
+      <p>Key concepts — semantic tags, forms, accessibility and more.</p>
+    </header>
+  <main>
+    <section class="concept-grid">
+
+      <!-- 1: Basic Structure -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Basic Structure</div>
+            <div class="concept-desc">Document scaffold</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Basic Structure — HTML</div>
+            <pre class="code">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;My Page&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;...&lt;/body&gt;
+&lt;/html&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2: Heading -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Heading</div>
+            <div class="concept-desc">Headings h1-h6</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Heading — HTML</div>
+            <pre class="code">&lt;h1&gt;Hello World&lt;/h1&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3: Paragraph -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Paragraph</div>
+            <div class="concept-desc">Text blocks</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Paragraph — HTML</div>
+            <pre class="code">&lt;p&gt;This is a paragraph.&lt;/p&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4: Link -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Link</div>
+            <div class="concept-desc">Anchor elements</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Link — HTML</div>
+            <pre class="code">&lt;a href="https://example.com"&gt;Click Me&lt;/a&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5: Image -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Image</div>
+            <div class="concept-desc">Images with alt text</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Image — HTML</div>
+            <pre class="code">&lt;img src="image.jpg" alt="A photo"&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6: List -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">List</div>
+            <div class="concept-desc">Unordered lists</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">List — HTML</div>
+            <pre class="code">&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7: Ordered -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Ordered</div>
+            <div class="concept-desc">Numbered lists</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Ordered — HTML</div>
+            <pre class="code">&lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8: Table -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Table</div>
+            <div class="concept-desc">Tabular data</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Table — HTML</div>
+            <pre class="code">&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Tim&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9: Form -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Form</div>
+            <div class="concept-desc">User input</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Form — HTML</div>
+            <pre class="code">&lt;form&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name"&gt;
+&lt;/form&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10: Button -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Button</div>
+            <div class="concept-desc">Clickable control</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Button — HTML</div>
+            <pre class="code">&lt;button&gt;Click&lt;/button&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11: Div -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Div</div>
+            <div class="concept-desc">Generic container</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Div — HTML</div>
+            <pre class="code">&lt;div&gt;Container&lt;/div&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12: Span -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Span</div>
+            <div class="concept-desc">Inline container</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Span — HTML</div>
+            <pre class="code">&lt;p&gt;This is &lt;span style="color:red;"&gt;important&lt;/span&gt;.&lt;/p&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 13: Header -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Header</div>
+            <div class="concept-desc">Document header</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Header — HTML</div>
+            <pre class="code">&lt;header&gt;Site Header&lt;/header&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 14: Nav -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Nav</div>
+            <div class="concept-desc">Navigation</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Nav — HTML</div>
+            <pre class="code">&lt;nav&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/nav&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 15: Article -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Article</div>
+            <div class="concept-desc">Content section</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Article — HTML</div>
+            <pre class="code">&lt;article&gt;Blog post&lt;/article&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 16: Footer -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Footer</div>
+            <div class="concept-desc">Page footer</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Footer — HTML</div>
+            <pre class="code">&lt;footer&gt;©2025&lt;/footer&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 17: Comment -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Comment</div>
+            <div class="concept-desc">HTML comments</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Comment — HTML</div>
+            <pre class="code">&lt;!-- This is a comment --&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 18: Audio -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Audio</div>
+            <div class="concept-desc">Audio element</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Audio — HTML</div>
+            <pre class="code">&lt;audio controls&gt;
+  &lt;source src="song.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 19: Video -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Video</div>
+            <div class="concept-desc">Video element</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Video — HTML</div>
+            <pre class="code">&lt;video controls width="320"&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- 20: Script -->
+      <div class="flip" tabindex="0">
+        <div class="flip-inner">
+          <div class="flip-front flip-card">
+            <div class="concept-title">Script</div>
+            <div class="concept-desc">Include scripts</div>
+          </div>
+          <div class="flip-back flip-card">
+            <div class="concept-title">Script — HTML</div>
+            <pre class="code">&lt;script src="app.js"&gt;&lt;/script&gt;</pre>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer class="site-footer">© Programming Course</footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

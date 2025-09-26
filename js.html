@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript — Programming Course</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body class="page topic">
+    <header class="site-header topic-header">
+      <a href="index.html" class="back" aria-label="Go to home" title="Go to home">← Home</a>
+      <h1>JavaScript</h1>
+      <p>Interactivity, DOM and ESNext features.</p>
+    </header>
+
+    <main>
+      <section class="concept-grid">
+
+        <!-- 1: Variable -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Variable</div>
+              <div class="concept-desc">let / const</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Variable — JS</div>
+              <pre class="code">let x = 10;</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2: Function -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Function</div>
+              <div class="concept-desc">Function declaration</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Function — JS</div>
+              <pre class="code">function multiply(a, b) {
+  return a * b;
+}</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3: Loop -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Loop</div>
+              <div class="concept-desc">for loop</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Loop — JS</div>
+              <pre class="code">for (let i = 0; i < 5; i++) {
+  console.log(i);
+}</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4: If/Else -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">If/Else</div>
+              <div class="concept-desc">Conditional</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">If/Else — JS</div>
+              <pre class="code">if (x > 5) {
+  console.log('Greater');
+} else {
+  console.log('Smaller');
+}</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5: Array -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Array</div>
+              <div class="concept-desc">Lists</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Array — JS</div>
+              <pre class="code">let numbers = [1, 2, 3];</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6: Object -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Object</div>
+              <div class="concept-desc">Key-value store</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Object — JS</div>
+              <pre class="code">let person = { name: 'Tim', age: 22 };</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7: Boolean -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Boolean</div>
+              <div class="concept-desc">true / false</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Boolean — JS</div>
+              <pre class="code">let isActive = true;</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8: While -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">While</div>
+              <div class="concept-desc">Repeat while condition</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">While — JS</div>
+              <pre class="code">while (x > 0) {
+  x--;
+}</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9: Try/Catch -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Try/Catch</div>
+              <div class="concept-desc">Error handling</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Try/Catch — JS</div>
+              <pre class="code">try {
+  let result = 10 / 0;
+} catch (err) {
+  console.log('Error');
+}</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10: Modules -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Modules</div>
+              <div class="concept-desc">ES6 modules</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Modules — JS</div>
+              <pre class="code">// import { something } from './module.js';</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11: Class -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Class</div>
+              <div class="concept-desc">ES6 classes</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Class — JS</div>
+              <pre class="code">class Car {
+  constructor(brand) {
+    this.brand = brand;
+  }
+}
+let myCar = new Car('Toyota');</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12: Arrow -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Arrow</div>
+              <div class="concept-desc">Short function syntax</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Arrow — JS</div>
+              <pre class="code">const square = n => n * n;</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13: Template -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Template</div>
+              <div class="concept-desc">String interpolation</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Template — JS</div>
+              <pre class="code">let name = 'Tim';
+console.log(`Hello ${name}`);</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14: Events -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Events</div>
+              <div class="concept-desc">React to events</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Event — JS</div>
+              <pre class="code">document.querySelector('button').addEventListener('click', () =&gt; {
+  alert('Clicked');
+});</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15: DOM -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">DOM</div>
+              <div class="concept-desc">Change page content</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">DOM — JS</div>
+              <pre class="code">document.getElementById('myid').textContent = 'Changed!';</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16: Promises -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Promises</div>
+              <div class="concept-desc">Async values</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Promises — JS</div>
+              <pre class="code">let promise = new Promise((resolve, reject) =&gt; {
+  resolve('Done');
+});</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 17: Async/Await -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Async/Await</div>
+              <div class="concept-desc">Friendly async syntax</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Async/Await — JS</div>
+              <pre class="code">async function fetchData() {
+  let data = await fetch('https://api.example.com');
+}</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 18: JSON -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">JSON</div>
+              <div class="concept-desc">Serialize data</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">JSON — JS</div>
+              <pre class="code">let jsonString = JSON.stringify(person);</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 19: Map -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Map</div>
+              <div class="concept-desc">Transform arrays</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Map — JS</div>
+              <pre class="code">numbers.map(n =&gt; n * n);</pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20: Local Storage -->
+        <div class="flip" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front flip-card">
+              <div class="concept-title">Local Storage</div>
+              <div class="concept-desc">Persist small data</div>
+            </div>
+            <div class="flip-back flip-card">
+              <div class="concept-title">Local Storage — JS</div>
+              <pre class="code">localStorage.setItem('key', 'value');</pre>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="site-footer">© Programming Course</footer>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
